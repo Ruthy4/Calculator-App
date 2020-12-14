@@ -24,6 +24,7 @@
             android:inputType="textCapWords"/>
 
         <TextView
+            android:id="@+id/answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="32dp"
@@ -41,7 +42,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                android:layout_margin="32dp"
-                android:text="ADD"/>
+                android:text="ADD"
+                android:onClick="doSum"/>
 
             <Button
                 android:id="@+id/subtract"
@@ -49,7 +51,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="32dp"
                 android:layout_toRightOf="@id/add"
-                android:text="Subtract"/>
+                android:text="Subtract"
+                android:onClick="doSub"/>
 
             <Button
                 android:id="@+id/divide"
@@ -57,6 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/add"
+                android:onClick="doDiv"
                 android:text="Divide"/>
 
             <Button
@@ -66,6 +70,7 @@
                 android:layout_toRightOf="@id/divide"
                 android:layout_below="@id/subtract"
                 android:layout_margin="32dp"
+                android:onClick="doMul"
                 android:text="Multiply"/>
 
     </RelativeLayout>
